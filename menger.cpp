@@ -65,7 +65,7 @@ int main(int argc, char **argv) {
 	      //if (isnan(sqrt(s*(s-a)*(s-b)*(s-c))))
 	      //	cout << a << " " << b << " " << c << " " << s << " " << s*(s-a)*(s-b)*(s-c) << endl;
 	      
-	      if (((a*b*c) != 0) && !isnan(sqrt(s*(s-a)*(s-b)*(s-c))))
+	      if (((a*b*c) != 0) && (s*(s-a)*(s-b)*(s-c) >= 0))
 		  m += 4*sqrt(s*(s-a)*(s-b)*(s-c)) / (a*b*c);
 	     
 	      //cout <<  4*sqrt(s*(s-a)*(s-b)*(s-c)) / (a*b*c) << endl;
